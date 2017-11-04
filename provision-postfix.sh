@@ -17,6 +17,7 @@ postfix postfix/mailname string $config_domain
 EOF
 
 apt-get install -y --no-install-recommends postfix-cdb
+apt-get install -y sqlite3
 
 # stop postfix before we configure it.
 systemctl stop postfix

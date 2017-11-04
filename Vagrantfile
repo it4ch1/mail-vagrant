@@ -13,7 +13,7 @@ Vagrant.configure(2) do |config|
     vb.memory = "1024"
   end
 
-  config.vm.provision "shell", path: "provision-powerdns.sh"
+#  config.vm.provision "shell", path: "provision-powerdns.sh"
   config.vm.provision "shell", path: "provision-postfix.sh"
   config.vm.provision "shell", path: "provision-dovecot.sh"
   config.vm.provision "shell", path: "provision.sh"
